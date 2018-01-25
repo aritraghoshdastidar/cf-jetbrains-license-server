@@ -6,7 +6,7 @@ ENV LCSRV_HOME /usr/bin/jetbrains/license-server
 RUN wget https://download.jetbrains.com/lcsrv/license-server-installer.zip \
  && mkdir -p $LCSRV_HOME \
  && unzip license-server-installer.zip -d $LCSRV_HOME \
- && $LCSRV_HOME/bin/license-server.sh configure --jetty.virtualHosts.names=54.210.79.204
+ && $LCSRV_HOME/bin/license-server.sh configure --jetty.virtualHosts.names=intellij.dev.sbg.a.intuit.com
 
 ADD entrypoint.sh /entrypoint.sh
 
